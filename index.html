@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discord Zapret — обход блокировок Discord в России | Скачать бесплатно</title>
+  <meta name="description" content="Discord заблокирован в России? Zapret — бесплатная утилита для обхода DPI-блокировок Discord на Windows 10 и Windows 11. Без VPN, без потери скорости. Скачать бесплатно." />
+  <meta name="keywords" content="дискорд, discord, обход блокировок discord, zapret, как открыть дискорд в России, discord заблокирован, обход dpi, скачать zapret, discord windows 10, discord windows 11" />
+  <meta property="og:title" content="Discord Zapret — обход блокировок" />
+  <meta property="og:description" content="Бесплатная утилита для обхода DPI-блокировок Discord. Без потери скорости." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://discordzapret.shop/" />
+  <meta property="og:image" content="https://discordzapret.shop/favicon.jpg" />
+  <link rel="canonical" href="https://discordzapret.shop/" />
+  <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--accent:#6366f1;--accent2:#8b5cf6;--bg:#0b0d14;--card:#12141f;--text:#e8ecf4;--text2:#8891a8;--border:#1e2240;--radius:24px}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+    ::selection{background:rgba(99,102,241,.3)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--border)}
+    .logo{font-weight:800;font-size:22px;letter-spacing:-.5px}
+    .logo span{color:var(--accent)}
+    .nav-links{display:flex;gap:20px;align-items:center}
+    .nav-links a{color:var(--text2);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+    .nav-links a:hover{color:var(--text)}
+    .nav-btn{background:var(--accent);color:#fff!important;padding:8px 24px;border-radius:40px;font-weight:700!important;font-size:13px!important;transition:opacity .2s!important}
+    .nav-btn:hover{opacity:.85;color:#fff!important}
+    header{padding:60px 0 40px;text-align:center}
+    .badge{display:inline-block;background:var(--bg);border:1px solid var(--border);padding:6px 18px;border-radius:40px;font-size:12px;font-weight:600;color:var(--text2);margin-bottom:24px}
+    h1{font-size:clamp(36px,5vw,54px);font-weight:800;letter-spacing:-.03em;line-height:1.05;margin-bottom:16px}
+    h1 span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-desc{font-size:17px;color:var(--text2);max-width:600px;margin:0 auto 32px;line-height:1.7}
+    .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;text-decoration:none;padding:16px 36px;border-radius:40px;font-weight:700;font-size:15px;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 25px rgba(99,102,241,.3)}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 35px rgba(99,102,241,.45)}
+    .btn-outline{background:transparent;color:var(--text);border:2px solid var(--border);box-shadow:none}
+    .btn-outline:hover{background:var(--card);box-shadow:0 4px 20px rgba(0,0,0,.04)}
+    .trust{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:24px;font-size:13px;color:var(--text2)}
+    .trust span{display:flex;align-items:center;gap:6px}
+    .trust svg{width:16px;height:16px;stroke:var(--accent2)}
+    section{padding:64px 0}
+    h2{font-size:clamp(26px,3.5vw,36px);font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
+    .sub{color:var(--text2);margin-bottom:40px;font-size:15px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px 28px;transition:transform .2s,box-shadow .2s}
+    .card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.04)}
+    .card .ico{width:48px;height:48px;background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--accent)}
+    .card .ico svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2}
+    .card h3{font-size:18px;font-weight:700;margin-bottom:6px}
+    .card p{font-size:14px;color:var(--text2);line-height:1.6}
+    .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:40px}
+    @media(max-width:700px){.about-grid{grid-template-columns:1fr}}
+    .about-text p{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:12px}
+    .highlight{border-left:3px solid var(--accent);padding:12px 20px;background:#1e2048;border-radius:0 12px 12px 0;font-size:14px;margin:16px 0;color:var(--text);line-height:1.6}
+    .stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .stat{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:20px 16px;text-align:center}
+    .stat-num{font-size:28px;font-weight:800;color:var(--accent)}
+    .stat-label{font-size:11px;color:var(--text2);margin-top:4px;text-transform:uppercase;letter-spacing:.3px}
+    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:32px}
+    .step{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px;position:relative}
+    .step-num{font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
+    .step h4{font-size:16px;font-weight:700;margin-bottom:6px}
+    .step p{font-size:13px;color:var(--text2);line-height:1.6}
+    .code{font-family:'SF Mono','Fira Code',monospace;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:6px 12px;font-size:12px;display:inline-block;margin:8px 0 4px;color:var(--accent);font-weight:600}
+    .note{background:#1e2048;border:1px solid #312e81;border-radius:16px;padding:14px 20px;font-size:13px;color:var(--text);margin-top:24px;line-height:1.6}
+    .note strong{color:var(--text)}
+    .faq{max-width:720px;margin:32px auto 0}
+    details{border:1px solid var(--border);border-radius:16px;margin-bottom:8px;overflow:hidden}
+    details[open]{border-color:var(--accent)}
+    summary{padding:16px 20px;font-weight:600;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;background:var(--card);transition:background .2s}
+    summary:hover{background:var(--bg)}
+    summary::marker{display:none}
+    summary::after{content:'+';font-size:20px;color:var(--text2);transition:transform .2s}
+    details[open] summary::after{transform:rotate(45deg);color:var(--accent)}
+    .faq-answer{padding:0 20px 16px;font-size:14px;color:var(--text2);line-height:1.7}
+    footer{text-align:center;padding:32px 0;border-top:1px solid var(--border)}
+    .footer-links{margin-bottom:16px}
+    footer a{color:var(--text2);text-decoration:none;font-size:13px;margin:0 12px;transition:color .2s}
+    footer a:hover{color:var(--text)}
+    .tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:16px}
+    .tag{display:inline-block;background:var(--card);border:1px solid var(--border);padding:4px 14px;border-radius:20px;font-size:11px;font-weight:600;color:var(--text2);text-decoration:none;transition:color .2s,border-color .2s;cursor:default}
+    .tag:hover{color:var(--accent);border-color:var(--accent)}
+    footer p{font-size:11px;color:var(--text2);margin-top:12px}
+    @media(max-width:600px){h1{font-size:30px}.hero-desc{font-size:15px}.btn{padding:14px 28px;font-size:14px;width:100%;justify-content:center}.about-grid{padding:24px}.stats{grid-template-columns:1fr 1fr}header{padding:40px 0 24px}section{padding:40px 0}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="logo">Discord<span>Zapret</span></div>
+    <div class="nav-links">
+      <a href="#about">О проекте</a>
+      <a href="#install">Установка</a>
+      <a href="#faq">FAQ</a>
+      <a href="dowload.html" class="nav-btn">Скачать</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="badge">Обход блокировок Discord в России · Бесплатно</div>
+    <h1>Discord снова работает<br><span>без VPN и без тормозов</span></h1>
+    <p class="hero-desc">Discord заблокирован в России? Zapret — это бесплатная утилита с открытым кодом, которая обходит DPI-блокировки провайдеров. Работает на уровне драйвера Windows 10 и Windows 11, не снижает скорость интернета и не требует сложных настроек. Просто скачал, запустил — и Discord снова работает.</p>
+    <div class="hero-actions">
+      <a href="dowload.html" class="btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Скачать Zapret
+      </a>
+      <a href="#about" class="btn btn-outline">Как это работает</a>
+    </div>
+    <div class="trust">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>Проверено</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Windows 10 / 11</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>Без телеметрии</span>
+    </div>
+  </header>
+
+  <section id="features">
+    <h2>Как обойти блокировку Discord в России</h2>
+    <p class="sub">VPN сервисы блокируют вместе с Discord. Zapret не шифрует трафик — он делает пакеты невидимыми для системы DPI вашего провайдера.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+        <h3>WinDivert — драйвер ядра</h3>
+        <p>Перехватывает и модифицирует TCP-пакеты на уровне ядра Windows. DPI провайдера не может отличить ваш трафик от обычного.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <h3>Автозапуск с системой</h3>
+        <p>Устанавливается как служба Windows. Включается автоматически при старте — забыли и пользуетесь.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Проверенный инструмент</h3>
+        <p>Тысячи пользователей в России уже скачали и используют Zapret для обхода блокировок Discord.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Что такое Zapret и как он обходит блокировки Discord</h2>
+    <p class="sub">Технически — это консольная утилита для обхода Deep Packet Inspection (DPI) провайдеров</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <p><strong>Zapret</strong> — это бесплатная утилита, которая точечно убирает DPI-блокировки Discord в России. В отличие от VPN, он не шифрует трафик и не гонит его через внешний сервер — а значит, не попадает под блокировку и не режет скорость интернета.</p>
+        <p>Принцип работы: драйвер WinDivert перехватывает TCP-пакеты, идущие к серверам Discord, и меняет их сигнатуру так, чтобы DPI-система провайдера не могла их распознать как трафик Discord. Для вас всё выглядит как обычный интернет — никаких задержек, никакой потери качества. Не нужен VPN, не нужны настройки — просто скачайте Zapret и Discord снова заработает.</p>
+        <div class="highlight">Утилита регулярно обновляется под новые методы блокировок. Работает на Windows 10 и Windows 11 — просто скачайте и запустите.</div>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-num">98%</div><div class="stat-label">Эффективность</div></div>
+        <div class="stat"><div class="stat-num">&lt;0.3ms</div><div class="stat-label">Доп. задержка</div></div>
+        <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Совместимость</div></div>
+        <div class="stat"><div class="stat-num">10k+</div><div class="stat-label">Пользователей</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="install">
+    <h2>Как установить Zapret на Windows 10 и Windows 11</h2>
+    <p class="sub">Установка занимает минуту. После запуска Discord будет работать без ограничений.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">Шаг 1</div>
+        <h4>Скачай</h4>
+        <div class="code">DiscordZapret.exe</div>
+        <p>Нажми кнопку "Скачать" выше — файл весит около 9 МБ.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">Шаг 2</div>
+        <h4>Размести</h4>
+        <div class="code">C:\zapret\</div>
+        <p>Создай папку в корне диска C: и положи туда файл. Это важно для работы службы.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">Шаг 3</div>
+        <h4>Запусти</h4>
+        <div class="code">Запуск от администратора</div>
+        <p>Кликни правой кнопкой → "Запуск от имени администратора". Фильтрация включится мгновенно.</p>
+      </div>
+    </div>
+    <div class="note">После запуска Discord заработает сразу. Для удаления запустите <strong>remove_service.bat</strong> от администратора.</div>
+  </section>
+
+  <section id="faq">
+    <h2>Частые вопросы о Zapret и блокировке Discord в России</h2>
+    <p class="sub">Всё, что вы хотели знать об обходе блокировок Discord</p>
+    <div class="faq">
+      <details>
+        <summary>Это безопасно? Не украдут ли мои данные?</summary>
+        <div class="faq-answer">Да, абсолютно. Исходный код открыт — любой разработчик может его проверить. Утилита работает локально, не отправляет данные на чужие серверы, не собирает логи. Ваши сообщения защищены шифрованием самого Discord (TLS) — Zapret их не расшифровывает, он только меняет заголовки TCP-пакетов.</div>
+      </details>
+      <details>
+        <summary>Чем отличается от VPN?</summary>
+        <div class="faq-answer">VPN шифрует весь трафик и гонит через сервер — это замедляет интернет и часто блокируется. Zapret работает на вашем компьютере, не шифрует, не перенаправляет, а просто убирает признаки Discord из пакетов. Скорость не падает, блокировку обойти легче, так как трафик идёт напрямую.</div>
+      </details>
+      <details>
+        <summary>Работает после обновления Windows?</summary>
+        <div class="faq-answer">Обычно да. Если после крупного обновления Discord перестал работать — перезапустите утилиту от администратора. Если не помогло — скачайте свежую версию из репозитория сообщества.</div>
+      </details>
+      <details>
+        <summary>Почему нужны права администратора?</summary>
+        <div class="faq-answer">Для установки драйвера WinDivert, который перехватывает пакеты на уровне ядра. Это стандартное требование для любого ПО, работающего с сетевым стеком (файрволы, VPN, снифферы). Без прав администратора Windows не разрешит это.</div>
+      </details>
+      <details>
+        <summary>Как полностью удалить Zapret?</summary>
+        <div class="faq-answer">Запустите remove_service.bat из папки с программой от администратора — он остановит и удалит драйвер и службу. После этого просто удалите папку. Никаких следов: ни записей в реестре, ни мусорных файлов.</div>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="dowload.html">Скачать Zapret</a>
+      <a href="#about">О проекте</a>
+      <a href="#install">Установка</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="tags">
+      <span class="tag">Discord</span>
+      <span class="tag">Обход блокировок</span>
+      <span class="tag">Zapret</span>
+      <span class="tag">Windows 10</span>
+      <span class="tag">Windows 11</span>
+      <span class="tag">Бесплатно</span>
+      <span class="tag">Россия</span>
+      <span class="tag">DPI</span>
+    </div>
+    <p>Zapret — утилита для обхода блокировок Discord в России.</p>
+  </footer>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Discord Zapret",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "Бесплатная утилита для обхода DPI-блокировок Discord в России. Работает без VPN, без потери скорости.",
+  "url": "https://discordzapret.shop",
+  "downloadUrl": "https://discordzapret.shop/DiscordZapret.exe",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "RUB"},
+  "author": {"@type": "Organization", "name": "Zapret Community"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Discord заблокирован в России?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Да, Discord блокируется многими провайдерами в России. Zapret позволяет обойти эти блокировки без VPN."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Как обойти блокировку Discord бесплатно?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Скачайте Zapret — бесплатную утилиту с открытым кодом. Запустите от администратора, и Discord заработает."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Zapret работает на Windows 11?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Да, Zapret полностью совместим с Windows 10 и Windows 11."
+    }
+  }]
+}
+</script>
+</body>
+</html>
